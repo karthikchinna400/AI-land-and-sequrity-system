@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Landslide Risk Monitoring</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+
+        <div class="logo">
+            🌍 LANDSLIDE AI
+        </div>
+
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#monitor">Monitoring</a>
+            <a href="#ai">AI Analysis</a>
+            <a href="#about">About</a>
+        </div>
+
+    </nav>
+
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <p class="tag">
+                AI-POWERED DISASTER MANAGEMENT
+            </p>
+
+            <h1>
+                AI-Based Landslide<br>
+                <span>Risk Monitoring System</span>
+            </h1>
+
+            <p class="hero-text">
+                Real-time monitoring using Artificial Intelligence,
+                environmental sensors and camera-based ground crack detection.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#monitor" class="btn">
+                    Start Monitoring
+                </a>
+
+                <a href="#ai" class="btn secondary">
+                    View AI Analysis
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-visual">
+
+            <div class="mountain">
+                🏔️
+            </div>
+
+            <div class="radar">
+                <span>AI</span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- MONITORING -->
+    <section id="monitor" class="section">
+
+        <div class="section-title">
+
+            <p>LIVE MONITORING</p>
+
+            <h2>Automatic Risk Parameters</h2>
+
+            <span>
+                Environmental conditions are continuously analyzed
+                to identify possible landslide risks.
+            </span>
+
+        </div>
+
+
+        <div class="cards">
+
+
+            <!-- RAINFALL -->
+            <div class="card">
+
+                <div class="card-icon">
+                    🌧️
+                </div>
+
+                <h3>Rainfall</h3>
+
+                <div class="parameter"
+                     id="rainfall">
+
+                    72%
+
+                </div>
+
+                <div class="progress">
+
+                    <div id="rainBar"
+                         class="progress-fill">
+                    </div>
+
+                </div>
+
+                <p>Rainfall Intensity</p>
+
+            </div>
+
+
+
+            <!-- SOIL -->
+            <div class="card">
+
+                <div class="card-icon">
+                    💧
+                </div>
+
+                <h3>Soil Moisture</h3>
+
+                <div class="parameter"
+                     id="soil">
+
+                    68%
+
+                </div>
+
+                <div class="progress">
+
+                    <div id="soilBar"
+                         class="progress-fill">
+                    </div>
+
+                </div>
+
+                <p>Ground Moisture</p>
+
+            </div>
+
+
+
+            <!-- SLOPE -->
+            <div class="card">
+
+                <div class="card-icon">
+                    📐
+                </div>
+
+                <h3>Slope Angle</h3>
+
+                <div class="parameter"
+                     id="slope">
+
+                    42°
+
+                </div>
+
+                <div class="progress">
+
+                    <div id="slopeBar"
+                         class="progress-fill">
+                    </div>
+
+                </div>
+
+                <p>Ground Inclination</p>
+
+            </div>
+
+
+
+            <!-- WATER -->
+            <div class="card">
+
+                <div class="card-icon">
+                    🌊
+                </div>
+
+                <h3>Water Level</h3>
+
+                <div class="parameter"
+                     id="water">
+
+                    54%
+
+                </div>
+
+                <div class="progress">
+
+                    <div id="waterBar"
+                         class="progress-fill">
+                    </div>
+
+                </div>
+
+                <p>Ground Water Level</p>
+
+            </div>
+
+
+
+            <!-- CAMERA -->
+            <div class="card">
+
+                <div class="card-icon">
+                    📷
+                </div>
+
+                <h3>Ground Cracks</h3>
+
+                <div class="parameter"
+                     id="cracks">
+
+                    35%
+
+                </div>
+
+                <div class="progress">
+
+                    <div id="crackBar"
+                         class="progress-fill">
+                    </div>
+
+                </div>
+
+                <p>AI Camera Detection</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- AI ANALYSIS -->
+    <section id="ai" class="ai-section">
+
+        <div class="ai-content">
+
+            <p>ARTIFICIAL INTELLIGENCE</p>
+
+            <h2>
+                AI Sensor Fusion
+            </h2>
+
+            <p>
+                Our system combines multiple environmental parameters
+                to calculate the probability of a landslide.
+            </p>
+
+
+            <div class="fusion">
+
+                <div>
+                    🌧️<br>
+                    Rainfall
+                </div>
+
+                <div>+</div>
+
+                <div>
+                    💧<br>
+                    Soil
+                </div>
+
+                <div>+</div>
+
+                <div>
+                    📐<br>
+                    Slope
+                </div>
+
+                <div>+</div>
+
+                <div>
+                    📷<br>
+                    Cracks
+                </div>
+
+                <div>→</div>
+
+                <div>
+                    🤖<br>
+                    <strong>AI</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- RISK DISPLAY -->
+
+        <div class="risk-box">
+
+            <p>LANDSLIDE RISK SCORE</p>
+
+            <div id="risk">
+                68%
+            </div>
+
+            <div id="riskLevel"
+                 class="risk-level">
+
+                MEDIUM RISK
+
+            </div>
+
+            <div id="alert"
+                 class="alert">
+
+                ⚠️ Monitor the area carefully
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- CAMERA SECTION -->
+    <section class="camera-section">
+
+        <div class="section-title">
+
+            <p>COMPUTER VISION</p>
+
+            <h2>Ground Crack Detection</h2>
+
+            <span>
+                Camera images can be analyzed by AI to identify
+                visible cracks and changes in the terrain.
+            </span>
+
+        </div>
+
+
+        <div class="camera-box">
+
+            <div class="camera-icon">
+                📷
+            </div>
+
+            <h3>
+                AI Camera Monitoring
+            </h3>
+
+            <p>
+                Camera feed / uploaded terrain image
+                will be analyzed here.
+            </p>
+
+            <button onclick="startCamera()">
+                Start Camera
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ABOUT -->
+    <section id="about" class="about">
+
+        <h2>
+            How The System Works
+        </h2>
+
+        <div class="steps">
+
+            <div>
+                <strong>01</strong>
+                <h3>Collect Data</h3>
+                <p>
+                    Sensors and cameras collect environmental information.
+                </p>
+            </div>
+
+            <div>
+                <strong>02</strong>
+                <h3>AI Analysis</h3>
+                <p>
+                    AI combines multiple risk parameters.
+                </p>
+            </div>
+
+            <div>
+                <strong>03</strong>
+                <h3>Risk Prediction</h3>
+                <p>
+                    The system calculates a landslide risk score.
+                </p>
+            </div>
+
+            <div>
+                <strong>04</strong>
+                <h3>Early Warning</h3>
+                <p>
+                    High-risk conditions generate an automatic warning.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <h3>🌍 LANDSLIDE AI</h3>
+
+        <p>
+            AI-Based Landslide Risk Monitoring System
+        </p>
+
+        <p>
+            © 2026 Landslide AI Project
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
