@@ -1,0 +1,6 @@
+link
+https://ai-land-and-sequrity-system-dczql8xrvgknh5xtqjuuep.streamlit.app/
+commands
+PS C:\Users\karthik\OneDrive\Desktop\kk.landslide2>
+streamlit run app.py
+
